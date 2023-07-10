@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
-  <link rel="stylesheet" href="./src/css/styles.css">
-  <script src="./src/js/script.js" defer></script>
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
+  <div class="container">
+    <h1 class="title">Age Calculator</h1>
+    <div class="form">
+      <label for="birthdate">Enter Your Birthdate:</label>
+      <input type="date" id="birthdate">
+      <button onclick="calculateAge()">Calculate</button>
+    </div>
+    <div id="result" class="result"></div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
