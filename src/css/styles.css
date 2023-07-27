@@ -1,0 +1,96 @@
+/* || Variable */
+:root {
+    /* primary colors */
+    --clr-purple: hsl(259, 100%, 65%);
+    --clr-red: hsl(0, 100%, 67%);
+    /*secondary colors */
+    --clr-white: hsl(0,0%,94%);
+    --clr-off-white: hsl(0, 0%, 94%);
+    --clr-lightgray: hsl(0, 0%, 86%);
+    --clr-smokey-gray: hsl(0, 1%, 44%);
+    --clr-off-black: hsl(0,0%,8%);
+    /* font Weight and font size */
+    --fs-normal: 2rem;
+    --fw-normal: 400;
+    --fw-bold: 700:;
+    --fw-bolder: 800;
+}
+
+/* || General Styling */
+@font-face {
+    font-family: "Poppins";
+    src: 
+    url(../../assets/fonts/Poppins-Regular.ttf),
+    url(../../assets/fonts/Poppins-Italic.ttf),
+    url(../../assets/fonts/Poppins-Bold.ttf),
+    url(../../assets/fonts/Poppins-BoldItalic.ttf),
+    url(../../assets/fonts/Poppins-ExtraBold.ttf),
+    url(../../assets/fonts/Poppins-ExtraBoldItalic.ttf);
+
+}
+
+body {
+    font-family: "Poppins", system-ui,-apple-system, serif;
+    background-color: var(--clr-lightgray);
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+}
+
+
+.container {
+background-color:hsl(0, 0%, 100%);
+margin-block: 4em 0;
+/* margin-left: 1em;
+margin-right: 1em; */
+border-radius: 15px;
+}
+.form {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 1em;
+    text-transform: uppercase;
+    padding-inline: 1.5em;
+   
+}
+.form div {
+    display: flex;
+    flex-direction: column;
+    padding-block:2em 1em;
+    
+}
+.form div input {
+    width: 70px;
+    height: 40px;
+}
+
+.circle{
+    background-color: var(--clr-purple);
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 50px;
+   height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.circle img {
+    width: 25px;
+    height: 25px;
+
+}
+ .line {
+   border: 1px solid hsla(0, 0%, 0%,0.1);
+   position: relative;
+   top: -25px;
+   z-index: 0;
+    
+}
+
+/* || age-info */
+
+.age-info {
+    font-size: 3rem;
+    
+}

@@ -7,14 +7,44 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/styles.css">
-  <script src="./src/js/script.js" defer></script>
-
 
 </head>
 <body>
+ <main>
+<div class="container">
+  <form action="" class="form">
+    <div>
 
+      <label for="day">day</label> 
+      <input type="number" id="day">
+    </div>
 
+    <div>
+
+      <label for="month">month</label>
+      <input type="number" id="month" min="1"  max="12">
+    </div>
+
+    <div>
+
+      <label for="year">year</label>
+      <input type="number" id="year">
+    </div>
+  </form>
+  <div class="circle">
+    <img src="./assets/images/icon-arrow.svg" class="icon-arrow" alt="icon-arrow">
   </div>
+  <div class="line"></div>
+
+ <div class="age-info">
+  Age: <span class="age-val"></span>
+</div>
+ 
+</div>
+
+ </main>
+ <script src="./src/js/script.js"></script>
 </body>
 </html>
