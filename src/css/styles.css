@@ -35,6 +35,7 @@ body {
     min-height: 100vh;
     display: grid;
     justify-content: center;
+    font-size: var(--fs-normal);
 }
 
 
@@ -43,7 +44,7 @@ background-color:hsl(0, 0%, 100%);
 margin-block: 4em 0;
 /* margin-left: 1em;
 margin-right: 1em; */
-border-radius: 15px;
+border-radius: 15px 15px 100px 15px;
 }
 .form {
     display: flex;
@@ -51,6 +52,7 @@ border-radius: 15px;
     gap: 1em;
     text-transform: uppercase;
     padding-inline: 1.5em;
+    font-size: 1rem;
    
 }
 .form div {
@@ -91,6 +93,19 @@ border-radius: 15px;
 /* || age-info */
 
 .age-info {
-    font-size: 3rem;
-    
+  /* font-size: var(--fw-normal); */
+  display: flex;
+  flex-direction: column;
+   padding-block: 0.2em 0.8em; 
+   /* gap: 0.1em; */
+   padding-inline: 1em;
+   font-weight: var(--fw-bolder);
+   font-style: italic;
+   font-size: 3rem;
+   
+}
+.age-info :is(span)
+{
+    color: var(--clr-purple);
+    margin-inline: 0 0.1em;
 }

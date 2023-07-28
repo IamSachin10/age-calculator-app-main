@@ -43,7 +43,9 @@ function calculateAge() {
   }
 
   // Display the calculated age in the HTML element
-  document.querySelector(".age-val").textContent = `${ageYear} years, ${ageMonth} months, ${ageDay} days`;
+  document.querySelector(".year-val").textContent = `${ageYear}`;
+  document.querySelector(".month-val").textContent = `${ageMonth}`;
+  document.querySelector(".day-val").textContent = `${ageDay}`;
 }
 
 // Add event listeners to the input fields using the input event
